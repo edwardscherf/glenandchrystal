@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import ampersand from "../images/ampersand.png";
+import twentyEight from "../images/28.png"
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Glen & Chrystal Scherf">
+	<main class="flex flex-col items-center justify-center min-h-screen">
+		<div class="flex flex-col items-center justify-center">
+			<h1 class="font-cinzel font-semibold text-8xl text-neutral-800 tracking-widest">Glen</h1>
+			<h2 class="font-cinzel font-medium text-4xl text-neutral-700 tracking-wide">Doss Hein</h2>
+			<Image src={ampersand} alt="Ampersand" width="265" height="264" />
+			<h1 class="font-cinzel font-semibold text-8xl text-neutral-800 tracking-widest">Chrystal</h1>
+			<h2 class="font-cinzel font-medium text-4xl text-neutral-700 tracking-wide">Lynn Scherf</h2>
+		</div>
+		<div class="flex flex-row items-center justify-center mt-10">
+			<p class="font-cinzel font-semibold text-6xl text-neutral-800 tracking-widest">Sept</p>
+			<Image src={twentyEight} alt="Twenty-Eighth" width="270" height="194" />
+			<p class="font-cinzel font-semibold text-6xl text-neutral-800 tracking-widest">2024</p>
+		</div>
+	</main>
+</Layout>
